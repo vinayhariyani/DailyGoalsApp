@@ -1,38 +1,88 @@
-.App {
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300;500&display=swap");
+
+* {
+  margin: 0%;
+  padding: 0%;
+  font-family: "Oswald", sans-serif;
+}
+
+header {
+  background-color: rgb(20, 20, 66);
   text-align: center;
+  color: white;
+  padding: 10px;
+  font-size: 1rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+.container {
+  background-color: rgba(149, 212, 223, 0.45);
+  width: 70%;
+  margin: auto;
   min-height: 100vh;
+  padding: 4vmax 8vmax;
+  block-size: border-box;
+}
+.container > h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin: 30px;
+}
+
+.container > form {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  text-align: center;
+  padding: 30px;
+}
+
+.container > form > input,
+textarea,
+button {
+  padding: 15px;
+  border: 1px solid rgba(0, 0, 0, 0.272);
+  border-radius: 5px;
+  margin: 10px 0px;
+  font-size: 1rem;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  background-color: rgb(36, 32, 32);
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+/* * {
+  border: 1px solid red;
+} */
+.task {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.task > div {
+  width: 100%;
+}
+
+.task span {
+  color: rgba(0, 0, 0, 0.735);
+}
+
+.task > button {
+  border-radius: 100%;
+  height: 30px;
+  width: 30px;
+  background-color: rgba(236, 21, 21, 0.788);
+  font-size: 1.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.task > button:hover {
+  background-color: yellowgreen;
 }
